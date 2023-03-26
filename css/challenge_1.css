@@ -1,0 +1,365 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+        to right,
+        #207733 0%,
+        #207733 65%,
+        #fff 35%,
+        #fff 100%
+    );
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    height: 85%;
+    margin: 100px 100px 100px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 5px 45px 0px rgba(0,0,0,0.25);
+    border-radius: 2px;
+}
+
+.signup{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    float: left;
+    border-radius: 2px;
+}
+
+.signup h2{
+    font-size: 27px;
+    color: #272626;
+    margin: 0px 50px 30px 50px;
+}
+
+.signup form{
+    margin: 30px 50px 50px 50px;
+}
+
+.signup form p{
+    font-size: 12px;
+    color: #272626;
+    margin-top: 10px;
+}
+.signup .logo{
+    width: 50px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 50px 20px 50px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #207733;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.green{
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/photo-1618220179428-22790b461013.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+    float: right; 
+    border-radius: 2px;
+    padding-top: 50px;
+}
+.green h1 img{
+    height: 30px;
+    width: 30px;
+}
+
+.green h1{
+    font-size: 41px;
+    color: #207733;
+    margin: 30px 50px 30px 50px;
+    font-weight: 550;
+}
+
+.green .list-box{
+    width: 280px;
+    height: 170px;
+    background-color: rgb(255, 255, 255, 0.35);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin: 150px 100px 0px 120px;
+}
+
+.green a{
+    background-color: rgb(255, 255, 255,0.25);
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    color: #207733;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px 50px 0px 300px;
+    padding: 8px 20px 8px 20px;
+}
+
+.green a:hover{
+    background-color: rgb(255, 255, 255); 
+    color: #207733;
+    border: 1px solid #207733;
+    animation: 0.5s ease-in-out;
+}
+
+.green .list-box ul{
+    margin: 10px 20px 10px 40px;
+}
+
+.green .list-box ul li{
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;  
+}
+
+.green .list-box ul p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #272626;
+}
+
+#li_1{
+    list-style-image: url('../img/1.png');
+}
+
+#li_2{
+    list-style-image: url('../img/2.png');
+}
+
+#li_3{
+    list-style-image: url('../img/3.png');
+}
+
+
+
+/* Responsiveness on mobile and hide the green div*/
+
+@media screen and (max-width: 768px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .green{
+        display: none;
+    }
+    .signup{
+        width: 100%;
+        height: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+    .signup h2{
+        margin: 0px 50px 30px 50px;
+    }
+    .signup form{
+        margin: 30px 50px 50px 50px;
+    }
+    .signup form p{
+        font-size: 12px;
+        color: #272626;
+        margin-top: 10px;
+    }
+    .signup .logo{
+        width: 50px;
+        height: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px 50px 20px 50px;
+    }
+    input, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #207733;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    .green{
+        display: none;
+    }
+}
+
+/* add a media query for tablet devices only taking into account all elements adjust "green div" to fit tablet devices */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .green{
+        display: none;
+    }
+    .signup{
+        width: 100%;
+        height: 100%;
+        margin: 250px 0px 0px 0px;
+    }
+    .signup h2{
+        margin: 0px 50px 30px 50px;
+    }
+    .signup form{
+        margin: 30px 50px 50px 50px;
+    }
+    .signup form p{
+        font-size: 12px;
+        color: #272626;
+        margin-top: 10px;
+    }
+    .signup .logo{
+        width: 50px;
+        height: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px 50px 20px 50px;
+    }
+    input, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #207733;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+}
+
+/* add a media query for laptop devices only with max width of 1024px and max height of 600*/
+
+
+@media screen and (min-width: 1024px) and (max-height: 600px) {
+    .container{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .green{
+        display: none;
+    }
+    .signup{
+        width: 100%;
+        height: 100%;
+        margin: 0px 0px 0px 0px;
+    }
+    .signup h2{
+        margin: 0px 50px 30px 50px;
+    }
+    .signup form{
+        margin: 30px 50px 50px 50px;
+    }
+    .signup form p{
+        font-size: 12px;
+        color: #272626;
+        margin-top: 10px;
+    }
+    .signup .logo{
+        width: 50px;
+        height: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px 50px 20px 50px;
+    }
+    input, select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 100%;
+        background-color: #207733;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+}
+
